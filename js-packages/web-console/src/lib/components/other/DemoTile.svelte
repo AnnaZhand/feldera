@@ -18,6 +18,7 @@
   <button
     class="card flex flex-col border border-surface-200-800 p-4 text-left transition-colors hover:preset-tonal-surface disabled:pointer-events-none disabled:opacity-50"
     disabled={!enabled}
+    title={enabled ? undefined : 'Creating a demo pipeline needs write access'}
     onclick={() => tryPipeline(demo, placement)}
   >
     <div class="text-sm text-surface-700-300">{demo.type}</div>
